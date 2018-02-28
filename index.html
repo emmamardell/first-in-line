@@ -13,6 +13,7 @@
       </div>
       <button class="addOption">Add</button>
     </div>
+    <div class="resultSection"> </div>
     <button>Go!</button>
       <p>Enjoy</p>
       <div>
@@ -23,5 +24,18 @@
       <img src="https://i.pinimg.com/originals/2f/76/3e/2f763eecf1bf4f083d78efad9664a837.jpg" width="600" height="450">
       <img src="https://seventeendoors.residencemagazine.se/wp-content/uploads/sites/25/2016/11/14583451_1594036777569885_1520811541140602880_n.jpg" width="500" height="450">
       </div>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script>
+        $(function() {
+          $('.resultSection').hide()
+
+          var add_option = function() {
+            $('.inputs').append('<input></input>')
+            }
+
+            $('.addOption').click(add_option)
+        })
+      </script>
   </body>
 </html>
